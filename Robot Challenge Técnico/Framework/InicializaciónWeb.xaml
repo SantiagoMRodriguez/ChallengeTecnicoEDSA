@@ -1,0 +1,359 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="InicializaciónWeb" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="InicializaciónWeb_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="InicializaciónWeb" sap:VirtualizedContainerService.HintSize="1473.2,1847.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Inicialización del Sitio Web" sap:VirtualizedContainerService.HintSize="1086.4,1824" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1052.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;El bot ingresara a Amazon desde Chrome&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome RPA014.1" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1052.8,1400.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="24c06351-9780-48c1-9b8d-7db8b81f1e8e" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1019.2,1152" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Configuración idioma y moneda" sap:VirtualizedContainerService.HintSize="985.6,1090.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Se validara que la página se encuentre en ingles con la moneda local (Arg - peso argentino). En caso contrario cambiara la configuración.&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Language and Currency'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="952,56.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24c06351-9780-48c1-9b8d-7db8b81f1e8e" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com" CVScreenId="7f85e21b-70c4-4723-9d93-cd59fce61bf9" ContentHash="mAsNHbH7MUGI2wGiclvjDg" DesignTimeRectangle="1412, 215, 53, 23" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='nav-line-2' parentid='icp-nav-flyout' tag='SPAN' /&gt;" Guid="48934eb8-ac38-419e-9a09-a9e4442b5d3b" InformativeScreenshot="adbf2256bfc210df4acce1955a788601.png" Reference="qR-E-VJHeUifUi1PQ1sD_w/lXF4R7rSukaorYFpijFviw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com en espanol. Gasta menos. Sonríe más.' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Ingreso en el apartado de Lenguaje y Divisa&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uix:NCheckState DisplayName="Check App State 'English - EN'" sap:VirtualizedContainerService.HintSize="952,480.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="24c06351-9780-48c1-9b8d-7db8b81f1e8e" Version="V4">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,230.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Ya esta el lenguaje en Ingles&quot;]" />
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,166.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'English - EN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24c06351-9780-48c1-9b8d-7db8b81f1e8e" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="amazon.com/-/es/customer-preferences/edit" CVScreenId="deb97219-696a-4512-988d-0bbf4f84867d" ContentHash="47-ud0pPY0uoPJI1L82f7w" CvElementArea="169, 429, 27, 27" CvType="RadioButton" DesignTimeRectangle="173, 431, 22, 21" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl parentid='icp-language-settings' tag='I' type='' class='a-icon a-icon-radio' aaname='' /&gt;" Guid="ffddc0f6-6a26-4e45-930e-39d7cf02cc0a" InformativeScreenshot="fe9ec9bac1765fd9c385c4cbf1d51c65.png" Reference="qR-E-VJHeUifUi1PQ1sD_w/1qK2uWrK5EmkLQXIbLkIsA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cambiar configuración de idioma y moneda' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                <uix:Target CVScreenId="deb97219-696a-4512-988d-0bbf4f84867d" CvTextArea="200, 434, 97, 21" CvTextArgument="English - EN" CvType="Text" DesignTimeRectangle="201, 432, 96, 22" FuzzySelectorArgument="&lt;webctrl aaname='         English -                        ' parentid='icp-language-settings' tag='SPAN' type='' class='' check:innerText='English - EN' /&gt;" Guid="729de6b7-dda3-4344-8283-c6c971f5c911" SearchSteps="FuzzySelector, CV" />
+                                <uix:Target CVScreenId="deb97219-696a-4512-988d-0bbf4f84867d" CvTextArea="167, 335, 262, 26" CvTextArgument="Configuración de idioma" CvType="Text" DesignTimeRectangle="170, 331, 903, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='icp-language-heading' tag='H3' type='' class='a-spacing-base' aaname='         Configuración de idioma     ' check:innerText='Configuración de idioma' /&gt;" Guid="45ce5266-ad1f-4dbc-897e-d5d65197e927" SearchSteps="FuzzySelector, CV" />
+                                <uix:Target CVScreenId="deb97219-696a-4512-988d-0bbf4f84867d" CvTextArea="1110, 334, 93, 17" CvTextArgument="Traducción" CvType="Text" DesignTimeRectangle="1112, 332, 90, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='icp-language-translation-heading' tag='SPAN' type='' class='a-text-bold' aaname='             Traducción         ' check:innerText='Traducción' /&gt;" Guid="574ed319-d8c9-4713-9477-11dda97d23de" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,49.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Selecciono Ingles&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/customer-preferences/edit" CVScreenId="215c714f-6a4d-4095-8e99-c72e7dd2ef0b" ContentHash="oRERpOYU8kCHFfYPAunOqA" CvElementArea="170, 429, 27, 26" CvType="RadioButton" DesignTimeRectangle="173, 431, 22, 21" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl parentid='icp-language-settings' tag='I' type='' class='a-icon a-icon-radio' aaname='' /&gt;" Guid="05b23c30-1b04-493c-bf36-6d036e16dfa5" InformativeScreenshot="c236c9d317f51f544827d5173ce9dad4.png" Reference="qR-E-VJHeUifUi1PQ1sD_w/mbAMB1odf0OYkq63hBfQ3w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Change Language &amp;amp; Currency Settings' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <uix:Target CVScreenId="215c714f-6a4d-4095-8e99-c72e7dd2ef0b" CvTextArea="200, 434, 97, 21" CvTextArgument="English - EN" CvType="Text" DesignTimeRectangle="201, 432, 96, 22" FuzzySelectorArgument="&lt;webctrl aaname='         English -                        ' parentid='icp-language-settings' tag='SPAN' type='' class='' check:innerText='English - EN' /&gt;" Guid="46898909-1a33-4282-bd63-bd73a9bbf337" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CVScreenId="215c714f-6a4d-4095-8e99-c72e7dd2ef0b" CvTextArea="167, 335, 198, 26" CvTextArgument="Language Settings" CvType="Text" DesignTimeRectangle="170, 331, 903, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='icp-language-heading' tag='H3' type='' class='a-spacing-base' aaname='         Language Settings     ' check:innerText='Language Settings' /&gt;" Guid="b7652917-7f7d-4be5-ba15-b6c3ebacd521" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NSelectItem DisplayName="Select Item 'Configuración de divisa'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="952,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="ARS - Argentine Peso" ScopeIdentifier="24c06351-9780-48c1-9b8d-7db8b81f1e8e" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="50">
+                      <x:String>Seleccionar moneda</x:String>
+                      <x:String>$ - USD - dólar estadounidense (Predeterminado)</x:String>
+                      <x:String>CLP - peso chileno</x:String>
+                      <x:String>COP - peso colombiano</x:String>
+                      <x:String>HKD - dólar hongkonés</x:String>
+                      <x:String>IDR - rupia indonesia</x:String>
+                      <x:String>ILS - nuevo séquel israelí</x:String>
+                      <x:String>KRW - won surcoreano</x:String>
+                      <x:String>MYR - ringit</x:String>
+                      <x:String>NZD - dólar neozelandés</x:String>
+                      <x:String>THB - bat</x:String>
+                      <x:String>TWD - nuevo dólar taiwanés</x:String>
+                      <x:String>CRC - colón costarricense</x:String>
+                      <x:String>PEN - sol peruano</x:String>
+                      <x:String>UYU - peso uruguayo</x:String>
+                      <x:String>BRL - real brasileño</x:String>
+                      <x:String>AUD - dólar australiano</x:String>
+                      <x:String>CAD - dólar canadiense</x:String>
+                      <x:String>CNY - yuan</x:String>
+                      <x:String>EUR - euro</x:String>
+                      <x:String>¥ - JPY - yen</x:String>
+                      <x:String>MXN - peso mexicano</x:String>
+                      <x:String>GBP - libra esterlina</x:String>
+                      <x:String>AED - dírham de los Emiratos Árabes Unidos</x:String>
+                      <x:String>SGD - dólar singapurense</x:String>
+                      <x:String>SAR - rial saudí</x:String>
+                      <x:String>NOK - corona noruega</x:String>
+                      <x:String>ARS - peso argentino</x:String>
+                      <x:String>AMD - dram</x:String>
+                      <x:String>AWG - florín arubeño</x:String>
+                      <x:String>AZN - manat azerbaiyano</x:String>
+                      <x:String>BSD - dólar bahameño</x:String>
+                      <x:String>BZD - dólar beliceño</x:String>
+                      <x:String>BOB - boliviano</x:String>
+                      <x:String>BND - dólar bruneano</x:String>
+                      <x:String>BGN - leva búlgara</x:String>
+                      <x:String>KHR - riel</x:String>
+                      <x:String>KYD - dólar de las Islas Caimán</x:String>
+                      <x:String>DOP - peso dominicano</x:String>
+                      <x:String>XCD - dólar del Caribe Oriental</x:String>
+                      <x:String>EGP - libra egipcia</x:String>
+                      <x:String>GHS - cedi</x:String>
+                      <x:String>GTQ - quetzal guatemalteco</x:String>
+                      <x:String>HUF - forinto húngaro</x:String>
+                      <x:String>INR - rupia india</x:String>
+                      <x:String>JMD - dólar jamaicano</x:String>
+                      <x:String>KZT - tenge kazajo</x:String>
+                      <x:String>KES - chelín keniano</x:String>
+                      <x:String>LBP - libra libanesa</x:String>
+                      <x:String>HNL - lempira hondureño</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/customer-preferences/edit" CVScreenId="b323e0ad-dc69-43d7-9bb5-9be5acd3c07d" ContentHash="QOAm5JzN2UmvF3jEoGFj1A" CvElementArea="169, 913, 381, 41" CvType="InputBox" DesignTimeRectangle="170, 914, 379, 38" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl type='' parentid='icp-currency-dropdown-selected-item-prompt' tag='SPAN' class='a-button-text a-declarative' aaname='' /&gt;" Guid="3f71c770-9227-4452-af20-51dcaf5726e4" ImageBase64="" InformativeScreenshot="439340f9d61cf79ec9ea11dd7f4be14f.png" Reference="qR-E-VJHeUifUi1PQ1sD_w/56DEwYhkIUKu6ozqCGfvPw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Change Language &amp;amp; Currency Settings' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                          <uix:Target CVScreenId="b323e0ad-dc69-43d7-9bb5-9be5acd3c07d" CvTextArea="167, 819, 192, 25" CvTextArgument="Currency Settings" CvType="Text" DesignTimeRectangle="170, 814, 903, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='icp-currency-heading' tag='H3' type='' class='a-spacing-base' aaname='     Currency Settings ' check:innerText='Currency Settings' /&gt;" Guid="ba77a4ac-d1ff-4350-a834-38a52c4dfe2f" SearchSteps="FuzzySelector, CV" />
+                          <uix:Target CVScreenId="b323e0ad-dc69-43d7-9bb5-9be5acd3c07d" CvTextArea="167, 867, 340, 16" CvTextArgument="Select the currency you want to shop with." CvType="Text" DesignTimeRectangle="170, 865, 337, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='icp-currency-subheading' tag='SPAN' type='' class='' aaname='     Select the currency you want to shop with. ' check:innerText='Select the currency you want to shop with.' /&gt;" Guid="584c56e8-1aba-49b6-aad4-cdfeb3644679" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NSelectItem>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Selecciono Peso Argentino&quot;]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="952,56.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="2" Version="V4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NMouseScroll>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="952,49.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24c06351-9780-48c1-9b8d-7db8b81f1e8e" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="amazon.com/-/es/customer-preferences/edit" CVScreenId="ce764301-cf7f-4ab9-b911-1c94fe2ed34e" ContentHash="iu73ZAbS2k-YOVp9OdEY3w" CvElementArea="256, 874, 133, 41" CvTextArea="271, 885, 102, 18" CvTextArgument="Save Changes" CvType="Button" DesignTimeRectangle="259, 876, 127, 36" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-labelledby='icp-save-button-announce' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" Guid="d9e6102e-a734-4d40-b360-853f8c46ceef" InformativeScreenshot="a19f08d5e8f13f7a309063a0dfd87cf7.png" Reference="qR-E-VJHeUifUi1PQ1sD_w/otcygJKf90iwGEKM_E6kQA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cambiar configuración de idioma y moneda' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="ce764301-cf7f-4ab9-b911-1c94fe2ed34e" CvElementArea="166, 874, 81, 42" CvTextArea="182, 885, 50, 16" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="171, 876, 74, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='icp-cancel-button' tag='A' type='' class='a-button-text' aaname='Cancel' check:innerText='Cancel' /&gt;" Guid="bda512fe-3f75-4571-9b81-8573f69451db" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="zcPAA2EcdEKEnmk6ZBqEUg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF0SURBVDhPlZMxS8NAGIYD2vwBR80P0Knt7qTZRZr8A9u9Q3+ASIWCULG4ClnqUi10EWy7qx0cLKQuOrQpOGhJ1cGhr7y5XHokReoLR7jv3u/5vrvcaQB0ACcAhlhe9DJH1wAcx1cHgwFKpRJylgXLtuE4TtwiVSFgrEZ6vR5WUimsxgaBCzQmYKJG8oVCkLBrmnBdN5pvGIZqk5okAJ7nBV10Oh1cN5vBFmQXC5QEcP/pbDaxhaUBsiIh7OasVvsfQJqPyuVgfpDPRzHf91UrlQSkM5kogQep/hF2E1MI+PKiCA9w3TCCBH6ZlLNt7Jgmpu9jzFwHuC+KEQFaW8CHq5IXq7svEh8PgTpTJWDUBi414K4ITOfdJPQ5Al4aolhjjRHlDF6vBITjZltU6VeBpyrQPwW6e6IqfSzI9RAwv8pvD8JICM11DbPwi9YmMLwVvh9fjPAqVyKAFFt8vph3MGzHHVLBY+JzPgfwHV/9Q/QyR/8FZNBNQChmFy8AAAAASUVORK5CYII=" InformativeScreenshot="6bfb4e5aa358dfa4d62068699b1b31c5.jpg" Reference="qR-E-VJHeUifUi1PQ1sD_w/mcj8Fl1XHUm4_ybUmXuLZA" Selector="&lt;html app='chrome.exe' title='Amazon.com en espanol. Gasta menos. Sonríe más.' /&gt;" Url="https://www.amazon.com/" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1052.8,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Finalizacion de configuración de Amazon.&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>
